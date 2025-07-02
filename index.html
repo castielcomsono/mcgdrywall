@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <title>MCG Drywall</title>
+</head>
+
+<body>
+    <!-- menu - cabeçalho -->
+    <header>
+        <nav>
+            <!-- botão do menu mobile -->
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <!-- opções do menu -->
+            <ul id="nav-links">
+                <li><a href="#inicio" class="link">Início</a></li>
+                <li><a href="#sobre" class="link">Sobre</a></li>
+                <li><a href="#servicos" class="link">Serviços</a></li>
+                <li><a href="#obras" class="link">Obras</a></li>
+                <li><a href="#contato" class="link">Contato</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- seção principal - homepage -->
+    <main class="inicio" id="inicio">
+        <!-- efeito de fundo dos circulos -->
+        <div>
+            <div class="circles"></div>
+            <div class="circles"></div>
+            <div class="circles"></div>
+        </div>
+        <!-- logo da mcg que aparece na tela -->
+        <div class="logo">
+            <img class="imgmcg" src="./imgs/Logomarca para fundo escuro.png" alt="logomcg" loading="lazy">
+            <p class="slogan"> Drywall com precisão, conforto e qualidade.</p>
+        </div>
+        <!-- slogan -->
+
+    </main>
+    <!-- seção de sobre -->
+    <section class="sobre" id="sobre">
+        <!-- título principal -->
+        <h2 class="title-sobre fade-in">Quem Somos?</h2>
+        <!-- parágrafo -->
+        <div class="container-sobre fade-in">
+            <p class="containerp fade-in">A MCG DRYWALL é uma empresa especializada em serviços de gesso para construção
+                civil, oferecendo material
+                de qualidade e mão de obra altamente qualificada. Com mais de 5 anos de experiência no mercado,
+                acumulamos conhecimento técnico e prático para entregar soluções eficientes e duradouras. Nosso
+                diferencial está no atendimento personalizado, na excelência nos acabamentos e no comprometimento com
+                prazos e resultados. Atuamos com foco total na satisfação do cliente, garantindo serviços bem executados
+                e que valorizam cada projeto. Seja em obras residenciais, comerciais ou corporativas, a MCG DRYWALL é a
+                parceira ideal para transformar ambientes com qualidade, segurança e profissionalismo.</p>
+        </div>
+    </section>
+    <!-- seção de serviços -->
+    <section class="servicos" id="servicos">
+        <!-- título principal -->
+        <h2 class="title-servicos fade-in">Serviços Oferecidos <i class="bi bi-building-fill"></i></h2>
+        <!-- div que guarda todos os cards -->
+        <div class="container-servicos fade-in">
+            <!-- card 1 -->
+            <div class="card-servicos fade-in">
+                <img class="img-servico" src="./imgs/forro-de-gesso-acartonado-drywall-7.jpg" alt="forro-acartonado" loading="lazy">
+                <div class="container-card fade-in">
+                    <h3 class="info-servicos fade-in">Forro Acartonado</h3>
+                    <p class="sobre-servicos fade-in" id="forro-acartonado">O forro acartonado é uma solução moderna,
+                        prática e versátil para revestimento
+                        de tetos. Feito com chapas de gesso acartonado, ele permite um acabamento liso, uniforme e com
+                        excelente desempenho térmico e acústico. Ideal para ambientes residenciais, comerciais e
+                        corporativos, o forro acartonado também facilita a instalação de iluminação embutida, sancas e
+                        projetos decorativos. A MCG DRYWALL garante uma execução precisa, limpa e dentro dos padrões de
+                        qualidade.</p>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="card-servicos fade-in">
+                <img class="img-servico" src="./imgs/Drywall.jpg" alt="drywall" loading="lazy">
+                <div class="container-card fade-in">
+                    <h3 class="info-servicos fade-in">Drywall</h3>
+                    <p class="sobre-servicos fade-in">O sistema Drywall é uma solução inteligente e eficiente para
+                        construção de
+                        paredes internas, divisórias e revestimentos. Composto por chapas de gesso acartonado fixadas em
+                        estruturas metálicas, o drywall oferece rapidez na instalação, ótimo desempenho acústico e
+                        térmico,
+                        além de permitir acabamentos refinados e personalizáveis. É ideal para obras que exigem
+                        agilidade,
+                        leveza e qualidade no acabamento. Na MCG DRYWALL, utilizamos materiais de primeira linha e mão
+                        de
+                        obra especializada para garantir resultados duradouros e funcionais em qualquer ambiente.</p>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="card-servicos fade-in">
+                <img class="img-servico" src="./imgs/forromodular.webp" alt="forromodular" loading="lazy">
+                <div class="container-card fade-in">
+                    <h3 class="info-servicos fade-in">Forro Modular</h3>
+                    <p class="sobre-servicos fade-in">O forro modular é uma excelente opção para ambientes corporativos,
+                        comerciais
+                        e institucionais que necessitam de praticidade e manutenção facilitada. Composto por placas
+                        modulares encaixadas em perfis metálicos, esse tipo de forro permite fácil acesso às instalações
+                        elétricas, hidráulicas e de ar-condicionado. Além disso, proporciona bom desempenho acústico,
+                        acabamento limpo e variedade de modelos e texturas, adaptando-se perfeitamente a diferentes
+                        estilos
+                        de projeto. A MCG DRYWALL executa a instalação de forros modulares com precisão, agilidade e
+                        atenção
+                        aos detalhes, garantindo um resultado funcional e esteticamente impecável.</p>
+                </div>
+
+            </div>
+            <!-- card 4 -->
+            <div class="card-servicos fade-in">
+                <img class="img-servico" src="./imgs/placa-cimenticia-superboard.jpg" alt="placa-cimenticia" loading="lazy">
+                <div class="container-card fade-in">
+                    <h3 class="info-servicos fade-in">Placas Cimentícias</h3>
+                    <p class="sobre-servicos fade-in">As placas cimentícias são ideais para aplicações em áreas externas
+                        ou
+                        ambientes internos que exigem alta resistência à umidade, impacto e variações climáticas.
+                        Fabricadas
+                        com cimento, fibras e aditivos especiais, essas placas oferecem durabilidade superior, excelente
+                        desempenho estrutural e são indicadas para fachadas, paredes, revestimentos e forros.</p>
+                </div>
+            </div>
+            <!-- card 5 -->
+            <div class="card-servicos fade-in">
+                <img class="img-servico" src="./imgs/SANCA-DE-GESSO.jpg" alt="sanca-de-gesso" loading="lazy">
+                <div class="container-card fade-in">
+                    <h3 class="info-servicos fade-in">Sanca de Gesso</h3>
+                    <p class="sobre-servicos fade-in">As sancas de gesso são elementos decorativos que valorizam o
+                        ambiente,
+                        proporcionando sofisticação, elegância e destaque à iluminação. Podem ser utilizadas em diversos
+                        estilos de projetos, desde os mais clássicos até os modernos, com opções abertas, fechadas ou
+                        invertidas. Além do apelo estético, também auxiliam no embutimento de cortinas e sistemas de
+                        iluminação indireta.</p>
+                </div>
+            </div>
+            <!-- card 6 -->
+            <div class="card-servicos fade-in">
+                <img class="img-servico" src="./imgs/cortineiro.jpg" alt="cortineiro" loading="lazy">
+                <div class="container-card fade-in">
+                    <h3 class="info-servicos fade-in">Cortineiros de Gesso</h3>
+                    <p class="sobre-servicos fade-in">O cortineiro de gesso é uma solução elegante e funcional para
+                        esconder trilhos
+                        ou varões de cortinas, proporcionando um acabamento mais limpo, moderno e sofisticado ao
+                        ambiente.
+                        Além de valorizar o design do espaço, ele permite integrar projetos de iluminação indireta com
+                        fitas
+                        de LED, criando um efeito visual ainda mais impactante.</p>
+                </div>
+            </div>
+            <!-- card 7 -->
+            <div class="card-servicos fade-in">
+                <img class="img-servico" src="./imgs/shafts.avif" alt="shafts" loading="lazy">
+                <div class="container-card fade-in">
+                    <h3 class="info-servicos fade-in">Shafts em Drywall</h3>
+                    <p class="sobre-servicos fade-in">Os shafts em drywall são estruturas verticais utilizadas para
+                        abrigar e dar
+                        acesso a tubulações hidráulicas, elétricas e de ventilação em edifícios residenciais, comerciais
+                        e
+                        industriais. Esse sistema permite manutenção fácil e rápida, além de oferecer acabamento limpo,
+                        seguro e resistente ao fogo e à umidade, quando combinado com chapas apropriadas.</p>
+                </div>
+            </div>
+            <!-- card 8 -->
+            <div class="card-servicos fade-in">
+                <img class="img-servico" src="./imgs/drywall-isolamento-acustico.jpg" alt="isolamentoacustico" loading="lazy">
+                <div class="container-card fade-in">
+                    <h3 class="info-servicos fade-in">Isolamento Acústico em Forros e Divisórias</h3>
+                    <p class="sobre-servicos fade-in">O isolamento acústico é essencial para garantir conforto sonoro e
+                        privacidade
+                        em ambientes residenciais, comerciais e corporativos. Aplicado em forros e divisórias de
+                        drywall, o
+                        sistema utiliza materiais como mantas acústicas, lã de vidro ou lã de rocha, que reduzem
+                        significativamente a propagação de ruídos entre ambientes.</p>
+                </div>
+            </div>
+            <!-- card 9 -->
+            <div class="card-servicos fade-in">
+                <img class="img-servico" src="./imgs/forro-pvc-gesso-drywall.jpg" alt="pvc" loading="lazy">
+                <div class="container-card fade-in">
+                    <h3 class="info-servicos fade-in">PVC</h3>
+                    <p class="sobre-servicos fade-in">O forro de PVC é uma solução prática, econômica e durável para
+                        acabamento de
+                        tetos em ambientes internos. Resistente à umidade, de fácil limpeza e com instalação rápida, é
+                        ideal
+                        para áreas como cozinhas, banheiros, lavanderias e espaços comerciais. Disponível em diferentes
+                        cores e texturas, o PVC proporciona versatilidade estética e baixo custo de manutenção.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- seção de obras -->
+    <section id="obras" class="obras">
+        <!-- título principal -->
+        <h2 class="primary">Obras Entregues</h2>
+        <!-- paragrafo -->
+        <p class="p1">Conheça alguns dos projetos já realizados pela MCG DRYWALL. Cada obra representa nosso compromisso
+            com a
+            qualidade, o acabamento impecável e a satisfação dos nossos clientes. Confira abaixo fotos reais de
+            ambientes transformados com nossos serviços em gesso, drywall, forros e muito mais.</p>
+        <!-- carrosel de fotos -->
+        <div class="slider-container">
+            <div class="imgslider">
+
+                <!-- foto 1 -->
+                <div class="slide active">
+                    <img src="./imgs/mcg1.jpeg" alt="" loading="lazy" >
+                </div>
+                <!-- foto 2 -->
+                <div class="slide">
+                    <img src="./imgs/mcg2.jpeg" alt="" loading="lazy">
+                </div>
+                <!-- foto 3 -->
+                <div class="slide">
+                    <img src="./imgs/mcg3.jpeg" alt="" loading="lazy">
+                </div>
+                <!-- foto 4 -->
+                <div class="slide">
+                    <img src="./imgs/mcg4.jpeg" alt="" loading="lazy">
+                </div>
+                <!-- foto 5 -->
+                <div class="slide">
+                    <img src="./imgs/mcg5.jpeg" alt="" loading="lazy">
+                </div>
+                <!-- foto 6 -->
+                <div class="slide">
+                    <img src="./imgs/mcg6.jpeg" alt="" loading="lazy">
+                </div>
+
+                <!-- botões de navegação -->
+                <button class="prev"><i class="bi bi-arrow-left-circle-fill"></i></button>
+                <button class="next"><i class="bi bi-arrow-right-circle-fill"></i></button>
+            </div>
+            <!-- indicadores -->
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+    <section class="clientes">
+        <div class="container-cc">
+            <!-- segundo titulo -->
+            <h2 class="secundary">Nossos clientes <i class="bi bi-bookmark-star-fill"></i></h2>
+            <!-- frase abaixo do titulo -->
+            <p class="p2">Conheça algumas das empresas que confiam no nosso serviço:</p>
+            <!-- lista de clientes -->
+            <ul class="listacliente">
+                <li class="ccu">Redepharma</li>
+                <li class="ccu">Prata Rara</li>
+                <li class="ccu">Arena Jogue Fácil</li>
+                <li class="ccu">Bob's</li>
+                <li class="ccu">Caixa Econômica</li>
+                <li class="ccu">Shopping Liv Mall</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- footer - rodapé -->
+    <footer id="contato" class="contato">
+        <div class="footer-container">
+            <!-- texto inicial -->
+            <div class="text-footer">
+                <p>
+                    Transformando ambientes com técnica e responsabilidade.
+                </p>
+            </div>
+            <!-- área de contatos -->
+            <div class="contact-footer">
+                <h5 class=""><a href=""><i class="bi bi-envelope-at-fill"></i> mcgdrywallecia@gmail.com</a></h5>
+
+                <h5 class=""><a href=""><i class="bi bi-instagram"></i> mcg_drywall</a></h5>
+
+                <h5 class=""><a href=""><i class="bi bi-whatsapp"></i> (83) 99862-0745</a></h5>
+
+                <h5 class=""><a href=""><i class="bi bi-file-earmark-text-fill"></i> 40.241.935/0001-84</a></h5>
+
+                <h5 class=""><a href=""><i class="bi bi-geo-alt-fill"></i> João Pessoa - PB </a></h5>
+            </div>
+            <!-- área do Copyright -->
+            <div class="copy-footer">
+                <h5>© 2025 Copyright: MCG Drywall e Cia</h5>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+        threshold: 0.2
+    };
+
+    const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    let currentSlide = 0;
+    let autoplayInterval;
+
+    function showSlide(index) {
+        if (index >= slides.length) currentSlide = 0;
+        else if (index < 0) currentSlide = slides.length - 1;
+        else currentSlide = index;
+
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === currentSlide);
+            dots[i].classList.toggle('active', i === currentSlide);
+        });
+    }
+
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+        showSlide(currentSlide - 1);
+    }
+
+    function startAutoplay() {
+        autoplayInterval = setInterval(nextSlide, 4000); // muda a cada 4 segundos
+    }
+
+    function stopAutoplay() {
+        clearInterval(autoplayInterval);
+    }
+
+    // Event listeners
+    next.addEventListener('click', () => {
+        nextSlide();
+        stopAutoplay();
+        startAutoplay();
+    });
+
+    prev.addEventListener('click', () => {
+        prevSlide();
+        stopAutoplay();
+        startAutoplay();
+    });
+
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+            showSlide(i);
+            stopAutoplay();
+            startAutoplay();
+        });
+    });
+
+    // Inicialização
+    showSlide(currentSlide);
+    startAutoplay();
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+
+
+</script>
