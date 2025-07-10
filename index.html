@@ -79,7 +79,8 @@
         <div class="container-servicos fade-in">
             <!-- card 1 -->
             <div class="card-servicos fade-in">
-                <img class="img-servico" src="./imgs/forro-de-gesso-acartonado-drywall-7.jpg" alt="forro-acartonado" loading="lazy">
+                <img class="img-servico" src="./imgs/forro-de-gesso-acartonado-drywall-7.jpg" alt="forro-acartonado"
+                    loading="lazy">
                 <div class="container-card fade-in">
                     <h3 class="info-servicos fade-in">Forro Acartonado</h3>
                     <p class="sobre-servicos fade-in" id="forro-acartonado">O forro acartonado é uma solução moderna,
@@ -128,7 +129,8 @@
             </div>
             <!-- card 4 -->
             <div class="card-servicos fade-in">
-                <img class="img-servico" src="./imgs/placa-cimenticia-superboard.jpg" alt="placa-cimenticia" loading="lazy">
+                <img class="img-servico" src="./imgs/placa-cimenticia-superboard.jpg" alt="placa-cimenticia"
+                    loading="lazy">
                 <div class="container-card fade-in">
                     <h3 class="info-servicos fade-in">Placas Cimentícias</h3>
                     <p class="sobre-servicos fade-in">As placas cimentícias são ideais para aplicações em áreas externas
@@ -181,7 +183,8 @@
             </div>
             <!-- card 8 -->
             <div class="card-servicos fade-in">
-                <img class="img-servico" src="./imgs/drywall-isolamento-acustico.jpg" alt="isolamentoacustico" loading="lazy">
+                <img class="img-servico" src="./imgs/drywall-isolamento-acustico.jpg" alt="isolamentoacustico"
+                    loading="lazy">
                 <div class="container-card fade-in">
                     <h3 class="info-servicos fade-in">Isolamento Acústico em Forros e Divisórias</h3>
                     <p class="sobre-servicos fade-in">O isolamento acústico é essencial para garantir conforto sonoro e
@@ -222,7 +225,7 @@
 
                 <!-- foto 1 -->
                 <div class="slide active">
-                    <img src="./imgs/mcg1.jpeg" alt="" loading="lazy" >
+                    <img src="./imgs/mcg1.jpeg" alt="" loading="lazy">
                 </div>
                 <!-- foto 2 -->
                 <div class="slide">
@@ -327,6 +330,14 @@
 
     faders.forEach(fader => {
         appearOnScroll.observe(fader);
+        window.addEventListener("load", () => {
+            faders.forEach(fader => {
+                if (fader.getBoundingClientRect().top < window.innerHeight) {
+                    fader.classList.add("visible");
+                }
+            });
+        });
+
     });
 
     const slides = document.querySelectorAll('.slide');
@@ -395,5 +406,15 @@
         navLinks.classList.toggle('show');
     });
 
+    document.querySelectorAll('a.link[href^="#"]').forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const targetID = link.getAttribute('href');
+            const target = document.querySelector(targetID);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
 
 </script>
