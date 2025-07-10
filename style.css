@@ -642,8 +642,12 @@ header nav ul li:hover::after {
   z-index: 999;
 }
 
+.navbar .nav-item{
+    color: #fff;
+}
+
 .navbar .nav-link {
-  color: #ccc;
+  color: #fff;
   transition: color 0.3s;
 }
 
@@ -654,3 +658,15 @@ header nav ul li:hover::after {
 .navbar-brand {
   color: #fff;
 }
+
+.custom-navbar .nav-link,
+.custom-navbar .navbar-toggler-icon,
+.custom-navbar .navbar-brand {
+  color: #fff !important;
+}
+
+.custom-navbar .navbar-toggler {
+  border-color: #fff;
+}
+
+

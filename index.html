@@ -318,24 +318,22 @@
 <script>
     const faders = document.querySelectorAll('.fade-in');
 
-    const appearOptions = {
-        threshold: 0.2
-    };
-
-    const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
         });
-    }, appearOptions);
+    }, { threshold: 0.25 });
 
-    // Força aparecer se já estiver visível no carregamento (especialmente em mobile)
     window.addEventListener("load", () => {
         faders.forEach(fader => {
             appearOnScroll.observe(fader);
 
-            if (fader.getBoundingClientRect().top < window.innerHeight) {
+            // Caso já esteja parcialmente visível, força a transição
+            const rect = fader.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
                 fader.classList.add("visible");
             }
         });
