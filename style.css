@@ -327,7 +327,6 @@ header nav ul li:hover::after {
     background-color: #413201;
 }
 
-/* Responsivo para telas pequenas */
 @media (max-width: 480px) {
 
     .prev,
@@ -460,7 +459,6 @@ header nav ul li:hover::after {
     margin-top: 2rem;
 }
 
-/* Responsivo */
 @media (min-width: 768px) {
     .contact-footer {
         flex-direction: row;
@@ -474,7 +472,6 @@ header nav ul li:hover::after {
     }
 }
 
-/* Responsivo para mobile geral */
 @media (max-width: 768px) {
     header {
         height: auto;
@@ -666,7 +663,42 @@ header nav ul li:hover::after {
 }
 
 .custom-navbar .navbar-toggler {
-  border-color: #fff;
+  border: none;
 }
 
+.custom-navbar .navbar-toggler-icon {
+  background-image: none;
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+}
 
+.custom-navbar .navbar-toggler-icon::before,
+.custom-navbar .navbar-toggler-icon::after,
+.custom-navbar .navbar-toggler-icon div {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--primaria);
+  transition: 0.3s;
+}
+
+.custom-navbar .navbar-toggler-icon::before {
+  top: 0;
+}
+
+.custom-navbar .navbar-toggler-icon::after {
+  bottom: 0;
+}
+
+.custom-navbar .navbar-toggler-icon div {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
